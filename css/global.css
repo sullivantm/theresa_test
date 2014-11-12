@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+
+/* ******************** ------------------------- GLOBAL IMPORTS ------------------------- ******************** */
+/*@import url('fonts.css');*/
+
+
+
+/* ******************** ------------------------- HTML5 DEFINITIONS ------------------------- ******************** */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+	}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+	}
+
+
+
+
+
+/* ******************** ------------------------- ELEMENT RESET ------------------------- ******************** */
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+/* end reset */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #fff;
+	color: #2f3b96;
+	font-family: arial, verdana, sans-serif;
+	font-size: 16px; /* 1em = 16px */
+	line-height: 1.4625em;	/* 23.4px */
+	width: 100%;
+}
+
+ul, ol {
+	margin-bottom: 0.714285714285714em;  /* 10px */
+	padding-left: 1.571428571428571em;	/* 22px */
+}
+
+ul li, ol li {
+	padding-bottom: 0.357142857142857em;	/* 5px */
+}
+
+ul li ul, ol li ul {
+	margin-bottom: 0em;
+	padding-top: 0.714285714285714em;  /* 10px */
+}
+
+ul li > span, ol li > span {
+	display: block;
+	margin-left: -0.357142857142857em;	/* -5px; */
+}
+
+ul li sup, ol li sup,
+ul li span span, ol li span span {
+	margin-left: 0em;
+}
+
+button,
+img {
+	border: none;
+}
+
+a {
+	color: #408b3b;
+}
+
+a:hover {
+	color: #58595b;
+	text-decoration: underline;
+}
+
+a:focus {
+	outline: 0;
+}
+
+div:focus {
+	outline: 0;
+}
+
+*:focus {
+	outline: 0;
+	-moz-outline: none; /* for firefox */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin-bottom: 0.714285714285714em;  /* 10px */
+}
+
+h1 {
+	color: #231f20;
+	font-weight:bold;
+	font-family: arial, verdana, sans-serif;
+	font-size: 2.1875em;	/* 35px */
+	line-height: 1.1em;
+}
+h1 span{
+	color:#2f3b97;
+}
+
+
+h2 {
+	color: #62a544;
+	line-height: 1.25;
+	margin-bottom: 0;
+}
+
+p {
+	margin-bottom: 1.071428571428571em;  /* 15px */
+}
+
+
+form {
+    display: inline;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+	display: inline;
+	outline: none;
+	}
+
+input[type="text"],
+input[type="password"],
+textarea {
+	resize: none;
+	}
+
+button {
+	overflow: visible; /* need for IE's mishandling of buttons */
+	width: auto; /* need for IE's mishandling of buttons */
+	}
+
+
+em {
+	font-style: italic;
+	}
+
+strong {
+	font-weight: bold;
+	}
+
+.underline {
+	text-decoration: underline;
+	}
+
+
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/* ******************** ------------------------- SHARED ELEMENTS ------------------------- ******************** */
+.clear 			{ clear: both; }
+.indent			{ padding-left: 1.428571428571429em; /* 20px */ }
+.left 			{ float: left; }
+.line-break 	{ display: block; }
+.nobreak		{ white-space: nowrap; }
+.right 			{ float: right; }
+.reg			{ position: relative; top: -.5em; font-size: .6em; line-height: .9em; }
+.small_caps		{ font-variant: small-caps; }
+sup 			{ position: relative; top: -.5em; font-size: .6em; line-height: .9em; white-space: nowrap; display: inline; }
+.subscript 		{ position: relative; font-size: .6em; bottom: -3px; }
+.col			{ float: left; }
+
+
